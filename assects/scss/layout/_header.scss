@@ -1,0 +1,94 @@
+#green {
+  background-color: $green;
+  .green {
+    @include disp(space-between);
+    padding: 15px 0;
+    .phone {
+      color: $white;
+
+      a {
+        color: $white;
+        padding-left: 2px;
+        font-family: $font;
+      }
+    }
+    .links-on-right {
+      @include disp();
+      column-gap: 20px;
+      opacity: 0.5;
+      a {
+        color: $white;
+        font-family: $font;
+      }
+      .border {
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+        padding: 0 10px;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+header {
+  .header {
+    @include disp(space-between);
+    padding: 30px 0;
+    .search {
+      position: relative;
+      width: 500px;
+      margin: 0 20px;
+      input {
+        border: none;
+        border-radius: 20px;
+        background-color: $gray;
+        width: 100%;
+        padding: 10px 40px 10px 20px;
+      }
+      .fa-solid {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: $dark;
+        opacity: 0.8;
+        font-size: 25px;
+      }
+    }
+    .links-right-place {
+      @include disp();
+      gap: 30px;
+      .links {
+        @include disp();
+        @extend %underline;
+        padding: 10px 0;
+
+        gap: 5px;
+        color: $dark;
+        a {
+          color: $dark;
+          font-family: $font;
+        }
+      }
+    }
+  }
+  .foot-of-head {
+    padding: 20px 0;
+    nav {
+      ul {
+        @include disp(start);
+        gap: 30px;
+        a {
+          color: $dark;
+          font-family: $font;
+          font-size: small;
+          @extend %underline;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

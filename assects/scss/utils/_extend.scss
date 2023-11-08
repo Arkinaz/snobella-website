@@ -1,0 +1,19 @@
+%underline{
+     transition: 0.3s;
+          border-bottom: 1px solid rgba($color: $dark, $alpha: 0);
+          padding:2px 0;
+          &:hover {
+            border-bottom: 1px solid rgba($color: $dark, $alpha: 1);
+          }
+}
+
+%button-hover{
+  border: 1px solid $dark;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $grey;
+    color: $white;
+    border: 1px solid transparent;
+  }
+}

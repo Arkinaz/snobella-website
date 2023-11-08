@@ -1,0 +1,237 @@
+#home {
+  background-color: $pink;
+
+  .home {
+    @include disp(space-between);
+    padding: 10px 0;
+    .left-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        font-size: 24px;
+        color: $red;
+        font-weight: 500;
+        font-family: $font;
+      }
+      h2 {
+        color: $black;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: $font;
+      }
+
+      p {
+        color: $black;
+        font-family: $font;
+        opacity: 0.7;
+        max-width: 453px;
+        line-height: 27.2px;
+        font-size: 16px;
+      }
+      button {
+        width: fit-content;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: $green;
+        color: $white;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba($color: $green, $alpha: 0.7);
+        }
+      }
+    }
+    .right-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+#guarantee {
+  .guarantee {
+    @include disp(space-between);
+    padding: 30px 0;
+    gap: 10px;
+    width: 100%;
+
+    .box {
+      @include disp();
+      gap: 10px;
+      h4 {
+        font-family: $font;
+        font-weight: 500;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+#bags {
+  .bags {
+    padding: 50px 0;
+    @include disp(space-between);
+    .inbox {
+      width: 264px;
+      height: 162px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background-color: $gray;
+      transition: 0.6s;
+      h4 {
+        font-family: $font;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 20px;
+      }
+      img {
+        position: absolute;
+        right: -35px;
+        bottom: -30px;
+        width: 80%;
+      }
+      &:nth-child(3) {
+        img {
+          bottom: -60px;
+        }
+      }
+      &:hover {
+        box-shadow: 0px 10px 9px $grey;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .bags {
+      flex-wrap: wrap;
+      gap: 30px;
+      .inbox {
+        width: 100%;
+      }
+      img {
+        padding: 0 60px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+#shop {
+  .shop {
+    .feathure {
+      @include disp(space-between);
+      padding: 40px 0;
+      h1 {
+        font-size: 24px;
+        color: $black;
+        font-weight: 700;
+        font-family: $font;
+      }
+      a {
+        color: $black;
+        font-family: $font;
+        font-weight: 500;
+        @extend %underline;
+        padding: 7px 0;
+      }
+    }
+    .boxes-bags {
+      @include disp(space-between, stretch);
+      width: 100%;
+      gap: 20px;
+
+      .box {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top {
+          @include disp(space-between);
+          width: 100%;
+          h3 {
+            padding: 5px 15px;
+            background-color: $cyan;
+            border-radius: 5px;
+            color: $white;
+            font-family: $font;
+          }
+          h4 {
+            padding: 5px 15px;
+            background-color: $red;
+            border-radius: 5px;
+            color: $white;
+            font-family: $font;
+          }
+
+          .fa-solid {
+            opacity: 0;
+            z-index: 1;
+            color: $red;
+            transition: 0.3s;
+            &:hover {
+              opacity: 1;
+            }
+          }
+          .fa-regular {
+            color: $red;
+
+            display: block;
+            position: absolute;
+            right: 0;
+          }
+        }
+        .img {
+          width: 100%;
+          padding: 0 20px;
+        }
+        .bottom {
+          @include disp(center, start);
+          flex-direction: column;
+          gap: 15px;
+          p {
+            font-family: $font;
+            color: $black;
+            font-weight: 500;
+            line-height: 25px;
+          }
+          .price {
+            @include disp();
+            gap: 25px;
+            h3 {
+              font-family: $font;
+              color: $red;
+              font-size: 20px;
+            }
+            h4 {
+              font-family: $font;
+              color: $grey;
+              font-weight: 600;
+            }
+          }
+          button {
+            border-radius: 10px;
+            width: 100%;
+            padding: 15px 0;
+            font-family: $font;
+            font-size: 20px;
+            font-weight: 600;
+            @extend %button-hover;
+          }
+        }
+      }
+      @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

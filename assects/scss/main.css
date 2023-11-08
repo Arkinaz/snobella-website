@@ -1,0 +1,584 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cont {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .cont {
+    padding: 0 5%;
+  }
+}
+
+#shop .shop .feathure a, footer .foot-of-foot .icons i, header .foot-of-head nav ul a, header .header .links-right-place .links {
+  transition: 0.3s;
+  border-bottom: 1px solid rgba(39, 49, 66, 0);
+  padding: 2px 0;
+}
+#shop .shop .feathure a:hover, footer .foot-of-foot .icons i:hover, header .foot-of-head nav ul a:hover, header .header .links-right-place .links:hover {
+  border-bottom: 1px solid #273142;
+}
+
+#shop .shop .boxes-bags .box .bottom button, footer .footer .left button {
+  border: 1px solid #273142;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#shop .shop .boxes-bags .box .bottom button:hover, footer .footer .left button:hover {
+  background-color: #aaaaaa;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+#green {
+  background-color: #007878;
+}
+#green .green {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+#green .green .phone {
+  color: #ffffff;
+}
+#green .green .phone a {
+  color: #ffffff;
+  padding-left: 2px;
+  font-family: "Poppins", sans-serif;
+}
+#green .green .links-on-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  opacity: 0.5;
+}
+#green .green .links-on-right a {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+#green .green .links-on-right .border {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  padding: 0 10px;
+}
+@media screen and (max-width: 767px) {
+  #green {
+    display: none;
+  }
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+header .header .search {
+  position: relative;
+  width: 500px;
+  margin: 0 20px;
+}
+header .header .search input {
+  border: none;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+}
+header .header .search .fa-solid {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #273142;
+  opacity: 0.8;
+  font-size: 25px;
+}
+header .header .links-right-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header .header .links-right-place .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 5px;
+  color: #273142;
+}
+header .header .links-right-place .links a {
+  color: #273142;
+  font-family: "Poppins", sans-serif;
+}
+header .foot-of-head {
+  padding: 20px 0;
+}
+header .foot-of-head nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+header .foot-of-head nav ul a {
+  color: #273142;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+@media screen and (max-width: 767px) {
+  header {
+    display: none;
+  }
+}
+
+footer .head-of-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+footer .head-of-foot .search {
+  position: relative;
+  width: 50%;
+  margin: 0 20px;
+}
+footer .head-of-foot .search input {
+  border: 1px solid #aaaaaa;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+}
+footer .head-of-foot .search .fa-solid {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #273142;
+  opacity: 0.8;
+  font-size: 25px;
+}
+@media screen and (max-width: 767px) {
+  footer .head-of-foot {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .head-of-foot .search {
+    width: 100%;
+  }
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+footer .footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+footer .footer .left p {
+  color: #273142;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+footer .footer .left .links a {
+  color: #273142;
+  font-family: "Poppins", sans-serif;
+  padding-left: 5px;
+}
+footer .footer .left button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+footer .footer .right {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+}
+footer .footer .right .links-of-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
+footer .footer .right .links-of-foot label {
+  font-weight: 600;
+  color: #212121;
+}
+footer .footer .right .links-of-foot ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer .right .links-of-foot ul li a {
+  color: #273142;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+footer .footer .right .links-of-foot ul li a:hover {
+  color: #aaaaaa;
+}
+@media screen and (max-width: 767px) {
+  footer .footer {
+    flex-direction: column;
+  }
+  footer .footer .left {
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer .left p {
+    text-align: center;
+  }
+  footer .footer .right {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  footer .footer .right .links-of-foot {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer .right .links-of-foot ul {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer .right .links-of-foot ul a {
+    text-align: center;
+  }
+}
+footer .foot-of-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #aaaaaa;
+  padding: 20px 0;
+}
+footer .foot-of-foot .icons {
+  color: #273142;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  footer .foot-of-foot {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+  }
+}
+
+#home {
+  background-color: #ffe2e0;
+}
+#home .home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+#home .home .left-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#home .home .left-info h3 {
+  font-size: 24px;
+  color: #df4244;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+#home .home .left-info h2 {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+#home .home .left-info p {
+  color: #212121;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.7;
+  max-width: 453px;
+  line-height: 27.2px;
+  font-size: 16px;
+}
+#home .home .left-info button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007878;
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#home .home .left-info button:hover {
+  background-color: rgba(0, 120, 120, 0.7);
+}
+#home .home .right-img img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  #home {
+    display: none;
+  }
+}
+
+#guarantee .guarantee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  gap: 10px;
+  width: 100%;
+}
+#guarantee .guarantee .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#guarantee .guarantee .box h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  #guarantee {
+    display: none;
+  }
+}
+
+#bags .bags {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#bags .bags .inbox {
+  width: 264px;
+  height: 162px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #F5F5F5;
+  transition: 0.6s;
+}
+#bags .bags .inbox h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 20px;
+}
+#bags .bags .inbox img {
+  position: absolute;
+  right: -35px;
+  bottom: -30px;
+  width: 80%;
+}
+#bags .bags .inbox:nth-child(3) img {
+  bottom: -60px;
+}
+#bags .bags .inbox:hover {
+  box-shadow: 0px 10px 9px #aaaaaa;
+}
+@media screen and (max-width: 767px) {
+  #bags .bags {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  #bags .bags .inbox {
+    width: 100%;
+  }
+  #bags .bags img {
+    padding: 0 60px;
+    bottom: 0;
+  }
+}
+
+#shop .shop .feathure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+#shop .shop .feathure h1 {
+  font-size: 24px;
+  color: #212121;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+#shop .shop .feathure a {
+  color: #212121;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 7px 0;
+}
+#shop .shop .boxes-bags {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 20px;
+}
+#shop .shop .boxes-bags .box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#shop .shop .boxes-bags .box .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#shop .shop .boxes-bags .box .top h3 {
+  padding: 5px 15px;
+  background-color: #43d167;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+#shop .shop .boxes-bags .box .top h4 {
+  padding: 5px 15px;
+  background-color: #df4244;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+#shop .shop .boxes-bags .box .top .fa-solid {
+  opacity: 0;
+  z-index: 1;
+  color: #df4244;
+  transition: 0.3s;
+}
+#shop .shop .boxes-bags .box .top .fa-solid:hover {
+  opacity: 1;
+}
+#shop .shop .boxes-bags .box .top .fa-regular {
+  color: #df4244;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+#shop .shop .boxes-bags .box .img {
+  width: 100%;
+  padding: 0 20px;
+}
+#shop .shop .boxes-bags .box .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 15px;
+}
+#shop .shop .boxes-bags .box .bottom p {
+  font-family: "Poppins", sans-serif;
+  color: #212121;
+  font-weight: 500;
+  line-height: 25px;
+}
+#shop .shop .boxes-bags .box .bottom .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#shop .shop .boxes-bags .box .bottom .price h3 {
+  font-family: "Poppins", sans-serif;
+  color: #df4244;
+  font-size: 20px;
+}
+#shop .shop .boxes-bags .box .bottom .price h4 {
+  font-family: "Poppins", sans-serif;
+  color: #aaaaaa;
+  font-weight: 600;
+}
+#shop .shop .boxes-bags .box .bottom button {
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  #shop .shop .boxes-bags {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=main.css.map */
